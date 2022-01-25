@@ -10,8 +10,10 @@ pipeline {
         stage("Build API status code") {
             steps {
                 sh "ls"
-                sh "docker build -t my_image ."
-                sh "docker run -p 8081:8081 my_image"
+                dir("pags_api_status_code") {
+                    sh "docker build -t my_image ."
+                    sh "docker run -p 8081:8081 my_image"
+                }
             }
         }
         
