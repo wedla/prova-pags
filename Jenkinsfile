@@ -1,6 +1,7 @@
 pipeline {
     agent any
-    stages {
+    node {
+        def app
         stage("Checkout Codebase") {
             steps {
                 cleanWs()
@@ -8,7 +9,8 @@ pipeline {
             }
         }
         stage("Build API status code") {
-            docker.build("pags_api_status_code")
+            app = docker.build("pags_api_status_code")
         }
+
     }
 }
