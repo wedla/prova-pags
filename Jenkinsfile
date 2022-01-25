@@ -26,15 +26,15 @@ pipeline {
                 sh "ls"
                 dir("pags_api_tests") {
                     sh "docker build -t my_tests ."
-                    sh "docker run --net pags-net -e 'BASE_URL=http://app:8081/status/' my_tests"
+                    sh "docker run --net pags-net -e 'BASE_URL=http://app:8081/status/' --name tests my_tests"
                 }
             }
         }
         stage("Remove docker network and containers") {
             steps {
                 sh "docker network rm pags-net"
-                sh "docker stop $(docker ps -q)"
-                sh "docker rm $(docker ps -q)"
+                sh 'docker stop $(docker ps -q)'
+                sh 'docker rm $(docker ps -q)'
             }
         }
     }
