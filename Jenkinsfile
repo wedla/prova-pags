@@ -21,7 +21,7 @@ pipeline {
                 sh "ls"
                 dir("pags_api_tests") {
                     sh "docker build -t my_tests ."
-                    sh "docker run -e 'BASE_URL=http://app:8081/status/' my_tests"
+                    sh "docker run -e 'BASE_URL=http://localhost:8081/status/' my_tests"
                 }
             }
         }
