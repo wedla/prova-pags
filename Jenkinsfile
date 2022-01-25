@@ -12,7 +12,7 @@ pipeline {
                 sh "ls"
                 dir("pags_api_status_code") {
                     sh "docker build -t my_app ."
-                    sh "docker run --name app -p -d 8081:8081 my_app"
+                    sh "docker run -d --name app -p 8081:8081 my_app"
                 }
             }
         }
