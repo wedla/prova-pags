@@ -7,13 +7,6 @@ pipeline {
                 checkout scm: [$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[credentialsId: 'Github', url: 'https://github.com/wedla/prova-pags']]]
             }
         }
-         stage('Initialize Docker') {
-             steps {
-                 def dockerHome = tool 'myDocker'
-                 env.PATH = "${dockerHome}/bin:${env.PATH}"
-                 sh "docker -v"
-             }
-        }
         stage("Build API status code") {
             steps {
                 dir("pags_api_status_code") {
