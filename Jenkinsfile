@@ -11,8 +11,17 @@ pipeline {
             steps {
                 sh "ls"
                 dir("pags_api_status_code") {
-                    sh "docker build -t my_image ."
-                    sh "docker run -p 8081:8081 my_image"
+                    sh "docker build -t my_app ."
+                    sh "docker run -p 8081:8081 my_image --name app"
+                }
+            }
+        }
+        stage("Run tests") {
+            steps {
+                sh "ls"
+                dir("pags_api_tests") {
+                    sh "docker build -t my_tests ."
+                    sh "docker run -e BASE_URL http://app:8081/status/ my_tests"
                 }
             }
         }
