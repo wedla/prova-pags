@@ -32,8 +32,8 @@ pipeline {
         }
         stage("Remove docker network and containers") {
             steps {
-                sh 'docker stop $(docker ps -q)'
-                sh 'docker container rm $(docker ps -q)'
+                sh 'docker stop app tests'
+                sh 'docker container rm app tests'
                 sh "docker network rm pags-net"
             }
         }
