@@ -8,9 +8,7 @@ pipeline {
             }
         }
         stage("Build API status code") {
-            steps {
-                docker.build("pags_api_status_code")
-            }
+            docker.build("pags_api_status_code")
         }
     }
 }
