@@ -24,12 +24,13 @@ pipeline {
         stage("Run tests") {
             steps {
                 dir("pags_api_tests") {
-                    sh "docker volume create --name reports"
                     sh "docker build -t my_tests ."
                     sh "docker run --net pags-net -e 'BASE_URL=http://app:8081/status/' -v jenkins-data:/target/surefire-reports --name tests my_tests"
                     sh "ls"
-                    junit 'jenkins_home/TEST-*.xml'
                 }
+                sh "cd ../../.."
+                sh "ls"
+                junit 'TEST-*.xml'
             }
         }
         stage("Remove docker network and containers") {
