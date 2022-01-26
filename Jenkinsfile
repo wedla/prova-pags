@@ -17,7 +17,7 @@ pipeline {
                 sh "ls"
                 dir("pags_api_status_code") {
                     sh "docker build -t my_app ."
-                    sh "docker run -d --net pags-net --name app --v ./target/surefire-reports:/target/surefire-reports -p 8081:8081 my_app"
+                    sh "docker run -d --net pags-net --name app -p 8081:8081 my_app"
                 }
             }
         }
