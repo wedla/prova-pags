@@ -28,7 +28,7 @@ pipeline {
                     sh "docker run --net pags-net -e 'BASE_URL=http://app:8081/status/' -v jenkins-data:/target/surefire-reports --name tests my_tests"
                     sh "ls"
                 }
-                sh "cd ../../.."
+                sh "cd ../../../.."
                 sh "ls"
                 junit 'TEST-*.xml'
             }
