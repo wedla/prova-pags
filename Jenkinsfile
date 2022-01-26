@@ -17,7 +17,7 @@ pipeline {
                 sh "ls"
                 dir("pags_api_status_code") {
                     sh "docker build -t my_app ."
-                    sh "docker run -d --net pags-net --name app -p 8081:8081 my_app"
+                    sh "docker run -d --net pags-net --name app --v ./target/surefire-reports:/target/surefire-reports -p 8081:8081 my_app"
                 }
             }
         }
@@ -27,6 +27,7 @@ pipeline {
                 dir("pags_api_tests") {
                     sh "docker build -t my_tests ."
                     sh "docker run --net pags-net -e 'BASE_URL=http://app:8081/status/' --name tests my_tests"
+                    junit 'target/surefire-reports/*.xml'
                 }
             }
         }

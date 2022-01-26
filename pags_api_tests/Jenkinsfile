@@ -1,5 +1,5 @@
 pipeline {
-    agent { dockerfile true }
+    agent any
     stages {
         stage("Checkout Codebase") {
             steps {
@@ -9,9 +9,17 @@ pipeline {
         }
         stage("Build API status code") {
             steps {
-                sh "echo test"
+                sh "ls"
+                sh "docker build -t my_image ."
+                sh "docker run my_image"
             }
         }
-        
+        stage("Build API status code") {
+            steps {
+                sh "ls"
+                sh "docker build -t my_image ."
+                sh "docker run my_image"
+            }
+        }
     }
 }
