@@ -25,9 +25,9 @@ pipeline {
             steps {
                 dir("pags_api_tests") {
                     sh "docker build -t my_tests ."
-                    sh "docker run --net pags-net -e 'BASE_URL=http://app:8081/status/' --name tests my_tests"
+                    sh "docker run --net pags-net -e 'BASE_URL=http://app:8081/status/'-v ./reports:/target/surefire-reports --name tests my_tests"
                     sh "ls"
-                    junit '/target/surefire-reports/*.xml'
+                    junit '/reports/*.xml'
                 }
             }
         }
