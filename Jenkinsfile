@@ -23,9 +23,9 @@ pipeline {
         }
         stage("Run tests") {
             steps {
-                sh "echo ${context.WORKSPACE}"
+                sh "echo ${env.WORKSPACE}"
                 dir("pags_api_tests") {
-                    sh "echo ${context.WORKSPACE}"
+                    sh "echo ${env.WORKSPACE}"
                     sh "docker build -t my_tests ."
                     sh "docker run --net pags-net -e 'BASE_URL=http://app:8081/status/' -v /var/jenkins_home/workspace/prova-pags-automacao/reports:/target/surefire-reports --name tests my_tests"
                 }
