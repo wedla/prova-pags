@@ -27,7 +27,7 @@ pipeline {
                 dir("pags_api_tests") {
                     sh "echo ${env.WORKSPACE}"
                     sh "docker build -t my_tests ."
-                    sh "docker run --net pags-net -e 'BASE_URL=http://app:8081/status/' -v /var/jenkins_home/workspace/prova-pags-automacao/reports:/target/surefire-reports --name tests my_tests"
+                    sh "docker run --net pags-net -e 'BASE_URL=http://app:8081/status/' -v ${env.WORKSPACE}/reports:/target/surefire-reports --name tests my_tests"
                 }
                 sh "ls"
             }
