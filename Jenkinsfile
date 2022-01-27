@@ -27,7 +27,7 @@ pipeline {
                 dir("pags_api_tests") {
                     sh "echo ${env.WORKSPACE}"
                     sh "docker build -t my_tests ."
-                    sh "docker run --net pags-net -e 'BASE_URL=http://app:8081/status/' -v jenkins-data:/target/surefire-reports --name tests my_tests"
+                    sh "docker run --net pags-net -e 'BASE_URL=http://app:8081/status/' -v ${env.WORKSPACE}/reports:/target/surefire-reports -v /var/run/docker.sock:/var/run/docker.sock --name tests my_tests"
                 }
                 dir ("../..") {
                     junit 'TEST-br.com.pags.tests.StatusCodeTest.xml'
