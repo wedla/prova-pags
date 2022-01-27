@@ -29,8 +29,9 @@ pipeline {
                     sh "docker build -t my_tests ."
                     sh "docker run --net pags-net -e 'BASE_URL=http://app:8081/status/' -v jenkins-data:/target/surefire-reports --name tests my_tests"
                 }
-                sh "cat ../../TEST-br.com.pags.tests.StatusCodeTest.xml"
-                junit '../../TEST-br.com.pags.tests.StatusCodeTest.xml'
+                dir ("../..") {
+                    junit 'TEST-br.com.pags.tests.StatusCodeTest.xml'
+                }
             }
         }
         stage("Remove docker network and containers") {
