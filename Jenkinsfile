@@ -24,8 +24,8 @@ pipeline {
         stage("Run tests") {
             steps {
                 dir("pags_api_tests") {
-                    sh "echo caminho `${WORKSPACE}`"
-                    sh "echo caminho2 `${env.WORKSPACE}`"
+                    sh "echo `${WORKSPACE}`"
+                    sh "echo `${env.WORKSPACE}`"
                     sh "docker build -t my_tests ."
                     sh "docker run --net pags-net -e 'BASE_URL=http://app:8081/status/' --name tests my_tests"
                 }
