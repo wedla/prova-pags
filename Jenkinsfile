@@ -23,8 +23,8 @@ pipeline {
         }
         stage("Run tests") {
             steps {
+                def path = "`${env.WORKSPACE}`/worspace/prova-pags-automacao"
                 dir("pags_api_tests") {
-                    def path = "`${env.WORKSPACE}`/worspace/prova-pags-automacao"
                     sh "echo caminho `${path}`"
                     sh "docker build -t my_tests ."
                     sh "docker run --net pags-net -e 'BASE_URL=http://app:8081/status/' -v `${path}`:/target/surefire-reports --name tests my_tests"
