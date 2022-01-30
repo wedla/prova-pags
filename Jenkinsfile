@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+        LOG_JUNIT_RESULTS = 'true'
+    }
     stages {
         stage("Checkout Codebase") {
             steps {
@@ -28,8 +31,8 @@ pipeline {
                     sh "docker build -t my_tests ."
                     sh "docker run --net pags-net -e 'BASE_URL=http://app:8081/status/' -v pags_reports:/target/surefire-reports --name tests my_tests"
                 }
-                sh "ls"
                 junit("TEST-*.xml")
+                influxDbPublisher(selectedTarget: 'junit-test-data')
             }
         }
         stage("Remove docker network and containers") {
