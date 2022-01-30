@@ -27,14 +27,14 @@ pipeline {
                 dir("pags_api_tests") {
                     sh "echo ${env.WORKSPACE}"
                     sh "docker build -t my_tests ."
-                    sh "docker run --net pags-net -e 'BASE_URL=http://app:8081/status/' -v /var/jenkins_home/workspace:/target/surefire-reports --name tests my_tests"
+                    sh "docker run --net pags-net -e 'BASE_URL=http://app:8081/status/' -v ./reports:/target/surefire-reports --name tests my_tests"
                 }
             }
         }
         stage("Remove docker network and containers") {
             steps {
                 sh 'docker stop app tests'
-                //sh 'docker container rm app tests'
+                sh 'docker container rm app tests'
                 sh "docker network rm pags-net"
             }
         }
