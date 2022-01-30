@@ -29,7 +29,7 @@ pipeline {
                     sh "docker volume create reports"
                     sh "docker build -t my_tests ."
                     sh "docker run --net pags-net -e 'BASE_URL=http://app:8081/status/' -v reports:/target/surefire-reports --name tests my_tests"
-                    sh "docker volume ls"
+                    sh "docker volume inspect reports"
                 }
             }
         }
