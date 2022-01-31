@@ -108,4 +108,7 @@ Outra melhoria futura é trazer para dentro do Dockerfile do Jenkins os plugins 
 
 Caso algum teste falhe, a pipeline será encerrada sem fazer o processamento dos dados para mostrar no Grafana. Portanto, esse também é um ponto de melhoria futura.
 
+## Evidências
+No diretório evidencias está um arquivo .txt com a execução feliz da pipeline.
+
 Enjoy! 🎉
