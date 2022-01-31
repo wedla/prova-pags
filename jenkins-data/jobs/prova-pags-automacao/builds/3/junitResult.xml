@@ -1,0 +1,94 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<result plugin="junit@1.53">
+  <suites>
+    <suite>
+      <file>/var/jenkins_home/workspace/prova-pags-automacao/TEST-br.com.pags.tests.StatusCodeTest.xml</file>
+      <name>br.com.pags.tests.StatusCodeTest</name>
+      <duration>1.44</duration>
+      <time>1.44</time>
+      <nodeId>45</nodeId>
+      <enclosingBlocks>
+        <string>36</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Run tests</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.225</duration>
+          <className>br.com.pags.tests.StatusCodeTest</className>
+          <testName>testRequisition(HttpMethod, String, String)[1]</testName>
+          <skipped>false</skipped>
+          <stdout>http://app:8081/status/
+</stdout>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.031</duration>
+          <className>br.com.pags.tests.StatusCodeTest</className>
+          <testName>testRequisition(HttpMethod, String, String)[2]</testName>
+          <skipped>false</skipped>
+          <stdout>http://app:8081/status/
+</stdout>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.013</duration>
+          <className>br.com.pags.tests.StatusCodeTest</className>
+          <testName>testRequisition(HttpMethod, String, String)[3]</testName>
+          <skipped>false</skipped>
+          <stdout>http://app:8081/status/
+</stdout>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.015</duration>
+          <className>br.com.pags.tests.StatusCodeTest</className>
+          <testName>testRequisition(HttpMethod, String, String)[4]</testName>
+          <skipped>false</skipped>
+          <stdout>http://app:8081/status/
+</stdout>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.013</duration>
+          <className>br.com.pags.tests.StatusCodeTest</className>
+          <testName>testRequisition(HttpMethod, String, String)[5]</testName>
+          <skipped>false</skipped>
+          <stdout>http://app:8081/status/
+</stdout>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.017</duration>
+          <className>br.com.pags.tests.StatusCodeTest</className>
+          <testName>testRequisition(HttpMethod, String, String)[6]</testName>
+          <skipped>false</skipped>
+          <stdout>http://app:8081/status/
+</stdout>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.01</duration>
+          <className>br.com.pags.tests.StatusCodeTest</className>
+          <testName>testRequisition(HttpMethod, String, String)[7]</testName>
+          <skipped>false</skipped>
+          <stdout>http://app:8081/status/
+</stdout>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.012</duration>
+          <className>br.com.pags.tests.StatusCodeTest</className>
+          <testName>testRequisition(HttpMethod, String, String)[8]</testName>
+          <skipped>false</skipped>
+          <stdout>http://app:8081/status/
+</stdout>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>1.44</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>

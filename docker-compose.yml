@@ -1,0 +1,45 @@
+version: "3"
+
+services:
+  jenkins:
+    build: ./jenkins
+    volumes:
+      - ./jenkins-data:/var/jenkins_home
+      - reports:/var/jenkins_home/workspace/prova-pags-automacao
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+  
+  influxdb:
+    image: influxdb:1.8
+    ports:
+      - 8086:8086
+    environment:
+      - DOCKER_INFLUXDB_INIT_MODE=upgrade
+      - DOCKER_INFLUXDB_INIT_USERNAME=my-user
+      - DOCKER_INFLUXDB_INIT_PASSWORD=my-password
+      - DOCKER_INFLUXDB_INIT_ORG=my-org
+      - DOCKER_INFLUXDB_INIT_BUCKET=my-bucket
+    volumes:
+      - ./influxdb:/var/lib/influxdb
+      - ./influxdb2:/var/lib/influxdb2 
+      - ./influxdb2-config:/etc/influxdb2
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - 3000:3000
+    volumes:
+      - ./grafana-data:/var/lib/grafana
+    environment:
+      - INFLUXDB_HOST=influxdb
+      - INFLUXDB_PORT=8086
+      - INFLUXDB_NAME="junit-test-data"
+      - INFLUXDB_USER="my-user"
+      - INFLUXDB_PASS="my-password"
+    depends_on:
+      - influxdb
+
+volumes:
+  reports:

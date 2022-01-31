@@ -1,0 +1,130 @@
+commit 0867a1d77a7362a9c5b5e8cfc55b9e2e8ab7604e
+tree eb9cea316e636ee9cc3a5d18a76441b5f1eda12f
+parent 9a5b6d6eea83c9f298e04e4f79d4a747e6fbee93
+author Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-30 04:04:57 -0300
+committer Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-30 04:04:57 -0300
+
+    adjusting jenkinsfile
+
+
+:100644 100644 386cffcfdc8775066ff337ca630a0f5948a68191 964e00599422c9615ad01e78c0eb5a96459de2f5 M	Jenkinsfile
+commit 9a5b6d6eea83c9f298e04e4f79d4a747e6fbee93
+tree 457ab0580748d7c5a3b67577c12ffe841a179b3b
+parent c1b9ddaff70c9459d956afdf0e64b6ab95f0afbe
+author Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-30 03:08:02 -0300
+committer Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-30 03:08:02 -0300
+
+    adjusting jenkinsfile
+
+
+:100644 100644 51f1817494685ea5caa23f23704d9ce62cd6139e 386cffcfdc8775066ff337ca630a0f5948a68191 M	Jenkinsfile
+commit c1b9ddaff70c9459d956afdf0e64b6ab95f0afbe
+tree 86f23dc3427981c77c8dd7bbe420310901d3cd10
+parent 408ab11cb874f08886130571a8b7df7428312c30
+author Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-30 03:00:46 -0300
+committer Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-30 03:00:46 -0300
+
+    adjusting jenkinsfile
+
+
+:100644 100644 49097efbca9cf182f38fb0092d37e6a44f7cb6bb 51f1817494685ea5caa23f23704d9ce62cd6139e M	Jenkinsfile
+commit 408ab11cb874f08886130571a8b7df7428312c30
+tree 9974bc490886aac07e6af3c839a4efddec3dd308
+parent 8ffb08efafeb66dbbd10e11dd5778bad30a03f4a
+author Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-30 02:15:59 -0300
+committer Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-30 02:15:59 -0300
+
+    adjusting jenkinsfile
+
+
+:100644 100644 3cd50be386020e459983c19e68fcecd9093193dc 49097efbca9cf182f38fb0092d37e6a44f7cb6bb M	Jenkinsfile
+commit 8ffb08efafeb66dbbd10e11dd5778bad30a03f4a
+tree b7518cd6c3e714df6988afd1e87760bb52855732
+parent 98a622789b83ae46ff69fd10942d959fa351de29
+author Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-30 02:06:20 -0300
+committer Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-30 02:06:20 -0300
+
+    adjusting jenkinsfile
+
+
+:100644 100644 5fb4ae214c2a0292ef90bc086e9f99fc0d4955c6 3cd50be386020e459983c19e68fcecd9093193dc M	Jenkinsfile
+commit 98a622789b83ae46ff69fd10942d959fa351de29
+tree 128e253d8a2080b2b05b86d9d526ac8587c5857d
+parent 745bdf31d8b3e6ac9b6a71638efc7518d2c6b3e1
+author Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-30 01:51:41 -0300
+committer Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-30 01:51:41 -0300
+
+    adjusting jenkinsfile
+
+
+:100644 100644 e808b12474dc07ca94cd5766a90868564f6a5cad 5fb4ae214c2a0292ef90bc086e9f99fc0d4955c6 M	Jenkinsfile
+commit 745bdf31d8b3e6ac9b6a71638efc7518d2c6b3e1
+tree 65bcd6ae785c359d38189330ddf859b962f1322e
+parent df9f96a31db99c5c53baaa31a5a8879c51347c85
+author Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-30 01:39:27 -0300
+committer Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-30 01:39:27 -0300
+
+    adjusting jenkinsfile
+
+
+:100644 100644 60b6cdd9dd9c73bb176291aea86487bb8d8d05ae e808b12474dc07ca94cd5766a90868564f6a5cad M	Jenkinsfile
+commit df9f96a31db99c5c53baaa31a5a8879c51347c85
+tree b9f78abbb59720f8e8cf0bc04e33de88c09ff034
+parent b5bdd377cba5eb51e6dc19b05c5a708d60143fda
+author Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-28 19:33:05 -0300
+committer Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-28 19:33:05 -0300
+
+    adjusting jenkinsfile
+
+
+:100644 100644 dcdd5a92b13a78589cd7c430ef68e05a0b6a85e6 60b6cdd9dd9c73bb176291aea86487bb8d8d05ae M	Jenkinsfile
+commit b5bdd377cba5eb51e6dc19b05c5a708d60143fda
+tree 604e99c12f34a0b65c6624a84a7e6e66392e149d
+parent 0a51061aa455347e93eaf277fd3d1744d3030cdd
+author Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-28 19:18:44 -0300
+committer Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-28 19:18:44 -0300
+
+    adjusting jenkinsfile
+
+
+:100644 100644 b3342cd129d4becf103658460acc66f69c0f7a42 dcdd5a92b13a78589cd7c430ef68e05a0b6a85e6 M	Jenkinsfile
+commit 0a51061aa455347e93eaf277fd3d1744d3030cdd
+tree 75fe441b37bd04220e5ef4f4504b043d590cbe63
+parent 23f09515a216d70fd7f5516dd7f856d1c843a6c7
+author Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-27 04:51:48 -0300
+committer Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-27 04:51:48 -0300
+
+    adjusting jenkinsfile
+
+
+:100644 100644 21a5ecd867afa63f60ac1aa6ae5280a51a0bf535 b3342cd129d4becf103658460acc66f69c0f7a42 M	Jenkinsfile
+commit 23f09515a216d70fd7f5516dd7f856d1c843a6c7
+tree ca273fed2c02f0b9b3da54decb39b4b92289c595
+parent 4b983a3c87840218dba18a8c4f904572abda60a1
+author Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-27 04:41:50 -0300
+committer Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-27 04:41:50 -0300
+
+    adjusting jenkinsfile
+
+
+:100644 100644 c0490ed01756b115482e7c9f9e5bc85e377ba578 21a5ecd867afa63f60ac1aa6ae5280a51a0bf535 M	Jenkinsfile
+commit 4b983a3c87840218dba18a8c4f904572abda60a1
+tree e475b67eafe39b7e4c24b65d1632bcc4631d63c1
+parent cfcfa229ea39ae31ebf8596fedb8ada89e1bcd76
+author Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-27 04:38:56 -0300
+committer Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-27 04:38:56 -0300
+
+    adjusting jenkinsfile
+
+
+:100644 100644 3381bfd78fc3aa92840460490718217349d010bc c0490ed01756b115482e7c9f9e5bc85e377ba578 M	Jenkinsfile
+commit cfcfa229ea39ae31ebf8596fedb8ada89e1bcd76
+tree ba6ac5061302fb3b55fa186834a5276a1663fdf2
+parent 0699819188462508b66d0e051012fb9c9dd1efbc
+author Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-27 04:24:01 -0300
+committer Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-27 04:24:01 -0300
+
+    adjusting jenkinsfile
+
+
+:100644 100644 81adb4749f3d30808ed2afa7d5733aec2e70e33a 3381bfd78fc3aa92840460490718217349d010bc M	Jenkinsfile

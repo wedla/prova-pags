@@ -1,0 +1,19 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkinsci.plugins.influxdb.InfluxDbGlobalConfig plugin="influxdb@3.0.2">
+  <targets class="java.util.concurrent.CopyOnWriteArrayList">
+    <jenkinsci.plugins.influxdb.models.Target>
+      <description>junit-test-data</description>
+      <url>http://influxdb:8086</url>
+      <credentialsId></credentialsId>
+      <database>junitdata</database>
+      <organization></organization>
+      <retentionPolicy>autogen</retentionPolicy>
+      <jobScheduledTimeAsPointsTimestamp>false</jobScheduledTimeAsPointsTimestamp>
+      <exposeExceptions>true</exposeExceptions>
+      <usingJenkinsProxy>false</usingJenkinsProxy>
+      <globalListener>false</globalListener>
+      <globalListenerFilter></globalListenerFilter>
+    </jenkinsci.plugins.influxdb.models.Target>
+  </targets>
+  <targetsMigrated>true</targetsMigrated>
+</jenkinsci.plugins.influxdb.InfluxDbGlobalConfig>

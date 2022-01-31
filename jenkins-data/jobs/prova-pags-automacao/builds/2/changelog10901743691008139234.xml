@@ -1,0 +1,10 @@
+commit 0699819188462508b66d0e051012fb9c9dd1efbc
+tree 1444def63a71756146e54274df9dba5cd220d816
+parent d3f2f7202ade5b473f487d513247ac2cc90d9ace
+author Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-27 03:58:00 -0300
+committer Wedla Melo <wedla.r.ext@ipiranga.ipiranga> 2022-01-27 03:58:00 -0300
+
+    adjusting jenkinsfile
+
+
+:100644 100644 3381bfd78fc3aa92840460490718217349d010bc 81adb4749f3d30808ed2afa7d5733aec2e70e33a M	Jenkinsfile
